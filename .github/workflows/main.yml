@@ -1,0 +1,14 @@
+name: CI
+
+on: [pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: Verify Labels   
+        - uses: yogevbd/enforce-label-action@1.0.1
+        - env:
+            VALID_LABELS:  "bug,enhancement,feature"
