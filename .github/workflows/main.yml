@@ -1,4 +1,4 @@
-name: CI
+name: Enforce PR label
 
 on: [pull_request]
 
